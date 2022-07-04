@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: auto auto auto;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 25px;
+}
+
+.city {
+  font-size: 35px;
+}
+
+.country {
+  font-size: 40px;
+}
+.temperature {
+  font-size: 60px;
+}
+
+.Wheather {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.temp {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.icono {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 40px;
+}
+
+.icono img {
+  width: 150px;
+  overflow: auto;
+  object-fit: cover;
+}
+
+button {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: auto;
+  margin-top: -10px;
+  display: inline-block;
+  padding: 10px 5px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4c7faf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 75%;
+}
+
+button:hover {
+  background-color: #235ba0;
+}
+
+button:active {
+  background-color: #235ba0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+@media screen and (max-width: 884px) {
+  .App {
+    display: grid;
+    grid-template-columns: auto;
+
+    grid-row: auto auto auto auto auto;
+  }
+
+  .title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 20px;
+  }
+
+  .city {
+    font-size: 30px;
+  }
+
+  .country {
+    font-size: 20px;
+  }
+  .temperature {
+    font-size: 40px;
+  }
+
+  .Wheather {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .icono {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 20px;
+  }
+  .temp {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
